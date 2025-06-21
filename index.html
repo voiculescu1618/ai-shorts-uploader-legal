@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TikTok Auth Redirect</title>
+  </head>
+  <body>
+    <h1>TikTok authentication complete</h1>
+    <p>You may now close this window.</p>
+    <script>
+      // Optional: capture token from redirect URI fragment if needed
+      const urlParams = new URLSearchParams(window.location.search);
+      console.log("Auth Code:", urlParams.get("code"));
+    </script>
+  </body>
+</html>
